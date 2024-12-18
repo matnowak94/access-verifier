@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "access-verifier"
+version = "1.0.0"
+description = "Application used to verify AWS IP addresses"
+authors = ["Mateusz Nowak <matnowak94@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+flask = "^2.3.0"
+requests = "^2.31.0"
+schedule = "^1.2.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

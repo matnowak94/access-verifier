@@ -1,0 +1,5 @@
+replicaCount: 1
+image:
+  repository: access-verifier
+  tag: latest
+  pullPolicy: IfNotPresent
