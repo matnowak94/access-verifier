@@ -50,7 +50,7 @@ def check_access():
 if __name__ == "__main__":
     get_allowed_ips(ALLOWED_IP_RANGES)
 
-    schedule.every(10).seconds.do(get_allowed_ips, ALLOWED_IP_RANGES)
+    schedule.every(1).day.do(get_allowed_ips, ALLOWED_IP_RANGES)
     scheduler_thread = threading.Thread(target=run_scheduler)
     scheduler_thread.daemon = True
     scheduler_thread.start()
